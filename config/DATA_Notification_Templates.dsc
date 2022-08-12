@@ -1,6 +1,9 @@
 data_notification_messages:
     type: data
     debug: false
+    GLOBAL:
+    - <reset>
+    - <reset><yellow>Right Click to Delete
     ANIMAL_HUSBANDRY:
         ANIMAL_DEATH:
             title: <red><bold>Your $_entity_name Died!

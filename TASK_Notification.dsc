@@ -14,6 +14,8 @@ task_notification_template_processor:
     - foreach <[entry].get[meta].get[data]>:
         - define message <[message].replace_text[$_<[key]>].with[<[value]>]>
 
+    - define message <[message].include[<script[data_notification_messages].data_key[GLOBAL]>]>
+
     - define material <script[data_notification_icon].data_key[<[entry].get[type]>].get[<[entry].get[template]>].get[material].if_null[barrier]>
     - define mechanism <script[data_notification_icon].data_key[<[entry].get[type]>].get[<[entry].get[template]>].get[mechanism]>
 
