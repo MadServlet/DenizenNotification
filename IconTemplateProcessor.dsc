@@ -12,7 +12,7 @@ proc_notification_template_processor:
     - define errorMessage "<reset><red><bold>ERROR - REPORT TO DISCORD"
 
     - define title <script[<[template]>].data_key[<[entry].get[type]>].get[<[entry].get[template]>].get[title].if_null[<[errorMessage]>]>
-    - define message <script[<[template]>].data_key[<[entry].get[type]>].get[<[entry].get[template]>].get[message]>
+    - define message "<list[<reset><blue>Message ID<&co> <gray>${id}|<reset>].include[<script[<[template]>].data_key[<[entry].get[type]>].get[<[entry].get[template]>].get[message]>]>"
 
     - foreach <[entry]>:
         - define title <[title].replace_text[${<[key]>}].with[<[value]>]>
