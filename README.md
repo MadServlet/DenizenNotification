@@ -91,7 +91,9 @@ Now there's a 3 things we need to take note when creating a template.
 A notification template should always have a `title` and `message`. The `title` will be the name of the item rendered in the GUI and the `message` will become the item's lore.
 
 ## Aftermath
-Now that we have our `event` pushing the notification data into the player's flag and a `template` to put as a message, we can now test it out!
+Now that we have our `event` pushing the notification data into the player's flag and a `template` to put as a message, we can now test it out! Try breaking a block and check our notification by doing `/notification`
+![image](https://user-images.githubusercontent.com/31308819/185789534-b26cfa06-a19c-42f3-92bf-af3fbc17834b.png)
+
 
 # Moving forward
 You can do more with denizen and extend this script even further by having custom handlers, actions, etc... through denizen.
