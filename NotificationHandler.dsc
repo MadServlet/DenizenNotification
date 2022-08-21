@@ -11,9 +11,6 @@ event_notification_handler:
         - define notification.read false
         - define notification.deleted false
 
-        - announce <[notification].get[icon]>
-        - announce <[notification].get[icon].is_truthy>
-
         - if !<[notification].get[icon].is_truthy>:
             - define notification.icon <item[book].with[display=NO_DATA]>
 
