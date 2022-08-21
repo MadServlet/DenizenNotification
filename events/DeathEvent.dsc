@@ -5,6 +5,9 @@ event_notification_defaults:
         type: NOTIFICATION
     event:
         death: PLAYER_DEATH
+    icon:
+        death:
+            material: skeleton_skull
     events:
         on player dies:
         - define notification <script[data_notification_data_template].data_key[template]>
@@ -13,6 +16,7 @@ event_notification_defaults:
 
         - define notification.type <script.data_key[data.type]>
         - define notification.template <script.data_key[event.death]>
+        - define notification.icon <item[<script.data_key[icon.death.material]>]>
 
         - definemap notification.meta:
             killed_by: <context.damager.name.if_null[NO_DATA]>

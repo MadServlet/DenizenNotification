@@ -5,8 +5,6 @@ data_notification_template_default:
         PLAYER_DEATH:
             title: <red><bold>You Died!
             message:
-            - <reset><blue>Message ID<&co> <gray>${id}
-            - <reset>
             - <reset><blue>From<&co> <green>SYSTEM
             - <reset><blue>Date<&co> <gray>${date} ${time}
             - <reset>
